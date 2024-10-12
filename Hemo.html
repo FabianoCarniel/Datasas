@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myron Law Associates</title>
+    <style>
+        /* CSS Inline */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .logo-wrapper {
+            width: 100%;
+            background-color: white;
+            padding: 10px 0;
+        }
+
+        .logo-text {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center; /* Alinha a imagem e o texto verticalmente */
+        }
+
+        .logo {
+            width: 100px;
+            margin-right: 10px;
+        }
+
+        .logo-text span {
+            font-size: 24px;
+            color: #5890A6;
+            font-weight: bold;
+        }
+
+        /* Botões de navegação */
+        .buttons {
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 20px;
+        }
+
+        .btn {
+            background-color: #5890A6;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #467f94; /* Cor mais escura ao passar o mouse */
+        }
+
+        .hero {
+            background-image: url('https://images.pexels.com/photos/5716001/pexels-photo-5716001.jpeg');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .about {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 2rem 1rem;
+            background-color: #0c1221;
+            color: white;
+        }
+
+        .about-content h2,
+        .about-content p {
+            color: white;
+        }
+
+        .about-content {
+            max-width: 600px;
+        }
+
+        /* Estilo da lista de tópicos */
+        .about-content ul {
+            margin-top: 1rem;
+            padding-left: 20px;
+        }
+
+        .about-content ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+            padding-top: 56.25%; /* Proporção 16:9 para o vídeo */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .practices {
+            background-color: #f4f4f4;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .practice-grid {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .practice-item {
+            width: 30%;
+            background-color: #e0c19a;
+            padding: 1.5rem;
+            margin: 1rem;
+            border-radius: 10px;
+        }
+
+        .services {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .services-content {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .service-item {
+            width: 30%;
+            padding: 1rem;
+        }
+
+        .contact {
+            background-color: #0c1221;
+            color: white;
+            padding: 2rem;
+            text-align: left;
+        }
+
+        footer {
+            background-color: #0c1221;
+            padding: 1rem;
+        }
+
+        .contact h2, .contact p, .contact h3 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Quadro branco com logo, texto e botões no início da página -->
+    <div class="logo-wrapper">
+        <div class="logo-text">
+            <div class="logo-container">
+                <img src="https://i.im.ge/2024/10/12/kw0hxm.Imagem1.png" alt="Logo" class="logo">
+                <span>Datasas</span>
+            </div>
+            <!-- Adicionando os três botões -->
+            <div class="buttons">
+                <a href="#home" class="btn">Home</a>
+                <a href="#practices" class="btn">Serviços</a>
+                <a href="#contact" class="btn">Contato</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 1: Header (Imagem de fundo começa aqui) -->
+    <header id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Decisões inteligentes, resultados crescentes</h1>
+            <p>Oferecemos acompanhamento especializado para maximizar o desempenho do seu negócio<br>
+            com decisões baseadas em dados.</p>
+        </div>
+    </header>
+
+    <!-- Section 2: About -->
+    <section class="about">
+        <div class="about-content">
+            <h2>Otimize a gestão do seu negócio com soluções baseadas em dados</h2>
+            <p>Oferecemos soluções inteligentes para otimizar sua gestão por meio de indicadores estratégicos e ferramentas analíticas. Nossos serviços transformam dados em informações práticas, ajudando você a resolver problemas de gestão e a tomar decisões mais assertivas, embasadas em informações precisas.</p>
+
+            <!-- Lista de tópicos -->
+            <ul>
+                 <p>Proporcionamos:</p>
+
+                <li>Implementação de Processos de Transformação Digital</li>
+                <li>Construção de indicadores para acompanhar a saúde da empresa</li>
+                <li>Desenvolvimento de Estruturas Estratégicas com Base em Dados</li>
+                <li>Capacitação de Líderes para Gestão de Alto Desempenho</li>
+                <li>Ferramentas personalizadas para gestão dos processos</li>
+                <li>Monitoramento e Acompanhamento de Desempenho Operacional</li>
+                <li>Automatização de Processos para Ganho de Eficiência</li>
+                <li>Transformação de Dados Brutos em Insights Acionáveis</li>
+            </ul>
+        </div>
+
+        <!-- Video ao lado do texto -->
+        <div class="video-container">
+            <iframe src="https://player.vimeo.com/video/1018899914?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&loop=1&muted=1&controls=0&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Vídeo do WhatsApp de 2024-10-08 à(s) 21.43.09_9ae7e7ce" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Section 3: Practices -->
+    <section id="practices" class="practices">
+        <h2>Nossas principais práticas</h2>
+        <div class="practice-grid">
+            <div class="practice-item">
+                <h3>Análise de Indicadores</h3>
+                <p>Transformamos dados brutos em indicadores estratégicos. Nossa abordagem garante que você tenha informações precisas para embasar a tomada de decisões com segurança e eficiência.</p>
+            </div>
+            <div class="practice-item">
+                <h3>Ferramentas de Gerenciamento</h3>
+                <p>Construimos ferramentas que facilitam o gerenciamento, acompanhamento e controle do desempenho da sua empresa, permitindo uma gestão mais ágil e orientada.</p>
+            </div>
+            <div class="practice-item">
+                <h3>Automação de Processos</h3>
+                <p>Automatizamos atividades essenciais, tornando os processos mais práticos e eficientes. Com isso, sua empresa ganha tempo e produtividade, focando no que realmente importa: o crescimento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Contact -->
+    <footer id="contact" class="contact">
+        <h2>Contato</h2>
+        <p><strong>Endereço:</strong> Florianópolis - SC</p>
+        <p><strong>Fone:</strong> (54) 991189102</p>
+        <p><strong>Email:</strong> Fabii.carniel@gmail.com</p>
+    </footer>
+
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+</body>
+</html>
+
+
